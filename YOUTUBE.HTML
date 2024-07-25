@@ -14,18 +14,30 @@
   <div class="header">
     <div class="left-section">
       <img src="icons/hamburger-menu.svg" class="hamburger">
-      <img src="icons/youtube-logo.svg" class="youtube-logo">
+      <a href="https://www.youtube.com" target="_blank">
+       <img src="icons/youtube-logo.svg" class="youtube-logo">        
+      </a>
+
     </div>
     <div class="middle-section">
       <input type="text" placeholder="Search" class="searchbox">
-      <button class="search-button"><img src="icons/search.svg" class="search-icon"></button>
-      <button class="voice-search-button"><img src="icons/voice-search-icon.svg" class="voice-search-icon"></button>
+      <button class="search-button">
+        <img src="icons/search.svg" class="search-icon">
+        <div class="tooltip"> search </div>
+      </button>
+      <button class="voice-search-button">
+        <img src="icons/voice-search-icon.svg" class="voice-search-icon">
+      </button>
     </div>
     
     <div class="right-section">
       <img src="icons/upload.svg" class="upload">
       <img src="icons/youtube-apps.svg" class="youtube-apps">
-      <img src="icons/notifications.svg" class="notifications">
+      <div style="position: relative;">
+        <img src="icons/notifications.svg" class="notifications">
+        <div class="notification">3</div>
+      </div>
+
       <img src="icons/my channel.jpg" class="my-channel">
     </div>
   </div>
@@ -66,7 +78,7 @@
     
     <div class="video-grid">
       <div>
-        <div style="position: relative;">
+        <div style="position: relative; background-color: ">
           <img src="Thumbnails/thumbnail-1.webp" class="thumbnail">
           <div class="timestamp">
             3:31
